@@ -63,7 +63,7 @@ function createToken(user) {
     const payload = {
         subject: user.id,
         username: user.username,
-        role: user.role,
+        department: user.department,
     };
     const secret = constants.jwtSecret;
     const options = {
